@@ -1,0 +1,486 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header-minimalist {
+  position: fixed;
+  z-index: 99;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 4fr;
+  grid-template-rows: 75px;
+  grid-template-areas: "logo portfolio1 portfolio2 portfolio3 about contacts social-media";
+}
+
+.header-minimalist a {
+  text-decoration: none;
+  color: aliceblue;
+  line-height: 17px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 200ms color ease-in;
+  transition: 200ms font-size ease-in;
+}
+
+.header-minimalist a:hover {
+  color: gold;
+}
+#logo {
+  grid-area: logo;
+}
+
+#logo img {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100%;
+}
+
+#about {
+  align-self: center;
+  justify-self: center;
+  grid-area: about;
+}
+
+#portfolio1 {
+  align-self: center;
+  justify-self: center;
+  grid-area: portfolio1;
+}
+
+#portfolio2 {
+  align-self: center;
+  justify-self: center;
+  grid-area: portfolio2;
+}
+
+#portfolio3 {
+  align-self: center;
+  justify-self: center;
+  grid-area: portfolio3;
+  scale: 1.4;
+}
+#portfolio3 a {
+  color: gold;
+}
+
+#portfolio3 a:hover {
+  font-size: 12px;
+}
+
+#contacts {
+  align-self: center;
+  justify-self: center;
+  grid-area: contacts;
+}
+
+.social-media {
+  align-self: center;
+  justify-self: end;
+  grid-area: social-media;
+}
+
+.social-media img {
+  padding: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+#social-media img:hover {
+  width: 25px;
+  height: 25px;
+}
+
+#films {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(14, 700px);
+  grid-template-areas:
+    "film14"
+    "film13"
+    "film3"
+    "film2"
+    "film5"
+    "film6"
+    "film12"
+    "film4"
+    "film8"
+    "film7"
+    "film9"
+    "film10"
+    "film1"
+    "film11";
+}
+
+#films h1 {
+  align-self: center;
+  transition: font-size 0.2s ease-in-out;
+}
+
+#films h1:hover {
+  color: rgb(3, 3, 3);
+  cursor: pointer;
+  font-size: 52px;
+}
+
+.film-title {
+  color: azure;
+  text-align: center;
+  text-justify: center;
+  line-height: 100px;
+  font-size: 30px;
+}
+
+.film-h1-none {
+  display: none;
+}
+
+.film-player-inherit {
+  display: inherit;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#abismo {
+  display: inherit;
+}
+
+#cultura {
+  display: inherit;
+}
+
+#niteroi {
+  display: inherit;
+}
+
+#o-que-e {
+  display: inherit;
+}
+
+#zelito {
+  display: inherit;
+}
+
+#universidade {
+  display: inherit;
+}
+
+#afinando {
+  display: inherit;
+}
+
+#cultura2 {
+  display: inherit;
+}
+
+#requiem {
+  display: inherit;
+}
+
+#trilha {
+  display: inherit;
+}
+
+#era {
+  display: inherit;
+}
+
+#o-que-vou2 {
+  display: inherit;
+}
+
+#tear {
+  display: inherit;
+}
+
+#holi {
+  display: inherit;
+}
+
+#lond {
+  display: inherit;
+}
+
+#kangaroo {
+  display: inherit;
+}
+
+#historias {
+  display: inherit;
+}
+
+#referencia {
+  display: inherit;
+}
+
+#olho {
+  display: inherit;
+}
+
+#abismo-player {
+  display: none;
+  position: relative;
+}
+
+#cultura-player {
+  display: none;
+  position: relative;
+}
+
+#niteroi-player {
+  display: none;
+  position: relative;
+}
+
+#o-que-e-player {
+  display: none;
+  position: relative;
+}
+
+#zelito-player {
+  display: none;
+  position: relative;
+}
+
+#universidade-player {
+  display: none;
+  position: relative;
+}
+
+#afinando-player {
+  display: none;
+  position: relative;
+}
+
+#cultura2-player {
+  display: none;
+  position: relative;
+}
+
+#requiem-player {
+  display: none;
+  position: relative;
+}
+
+#trilha-player {
+  display: none;
+  position: relative;
+}
+
+#era-player {
+  display: none;
+  position: relative;
+}
+
+#o-que-vou2-player {
+  display: none;
+  position: relative;
+}
+
+#tear-player {
+  display: none;
+  position: relative;
+}
+
+#kangaroo-player {
+  display: none;
+  position: relative;
+}
+
+#historias-player {
+  display: none;
+  position: relative;
+}
+
+#lond-player {
+  display: none;
+  position: relative;
+}
+
+#holi-player {
+  display: none;
+  position: relative;
+}
+
+#referencia-player {
+  display: none;
+  position: relative;
+}
+
+#olho-player {
+  display: none;
+  position: relative;
+}
+
+#film1 {
+  display: grid;
+  place-items: center;
+  grid-area: film1;
+  background-image: url(../images/films/intitutions/film1.png);
+  background-size: cover;
+}
+
+#film2 {
+  display: grid;
+  place-items: center;
+  grid-area: film2;
+  background-image: url(../images/films/intitutions/film2.png);
+  background-size: cover;
+}
+
+#film3 {
+  display: grid;
+  place-items: center;
+  grid-area: film3;
+  background-image: url(../images/films/intitutions/film3.png);
+  background-size: cover;
+}
+
+#film4 {
+  display: grid;
+  place-items: center;
+  grid-area: film4;
+  background-image: url(../images/films/intitutions/film4.png);
+  background-size: cover;
+}
+
+#film5 {
+  display: grid;
+  place-items: center;
+  grid-area: film5;
+  background-image: url(../images/films/intitutions/film5.png);
+  background-size: cover;
+}
+
+#film6 {
+  display: grid;
+  place-items: center;
+  grid-area: film6;
+  background-image: url(../images/films/intitutions/film6.png);
+  background-size: cover;
+}
+
+#film7 {
+  display: grid;
+  place-items: center;
+  grid-area: film7;
+  background-image: url(../images/films/intitutions/film7.png);
+  background-size: cover;
+}
+
+#film8 {
+  display: grid;
+  place-items: center;
+  grid-area: film8;
+  background-image: url(../images/films/intitutions/film8.png);
+  background-size: cover;
+}
+
+#film9 {
+  display: grid;
+  place-items: center;
+  grid-area: film9;
+  background-image: url(../images/films/intitutions/film9.jpg);
+  background-size: cover;
+}
+
+#film10 {
+  display: grid;
+  place-items: center;
+  grid-area: film10;
+  background-image: url(../images/films/intitutions/film10.png);
+  background-size: cover;
+}
+
+#film11 {
+  display: grid;
+  place-items: center;
+  grid-area: film11;
+  background-image: url(../images/films/intitutions/film11.png);
+  background-size: cover;
+}
+
+#film12 {
+  display: grid;
+  place-items: center;
+  grid-area: film12;
+  background-image: url(../images/films/intitutions/film12.png);
+  background-size: cover;
+}
+
+#film13 {
+  display: grid;
+  place-items: center;
+  grid-area: film13;
+  background-image: url(../images/films/intitutions/film13.png);
+  background-size: cover;
+}
+
+#film14 {
+  display: grid;
+  place-items: center;
+  grid-area: film14;
+  background-image: url(../images/films/intitutions/film14.png);
+  background-size: cover;
+}
+
+#film15 {
+  display: grid;
+  place-items: center;
+  grid-area: film15;
+  background-image: url(../images/films/intitutions/film15.png);
+  background-size: cover;
+}
+
+#film16 {
+  display: grid;
+  place-items: center;
+  grid-area: film16;
+  background-image: url(../images/films/intitutions/film16.png);
+  background-size: cover;
+}
+
+#film17 {
+  display: grid;
+  place-items: center;
+  grid-area: film17;
+  background-image: url(../images/films/intitutions/film17.png);
+  background-size: cover;
+}
+
+.footer-minimalist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 75px;
+  background-color: black;
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+  grid-template-areas: "developed cop social-media";
+}
+
+.footer-minimalist a,
+p {
+  text-decoration: none;
+  color: aliceblue;
+  line-height: 17px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.footer-minimalist a:hover {
+  color: gold;
+}
+
+#developed {
+  grid-area: developed;
+  justify-self: start;
+  margin-left: 30px;
+}
+
+#cop {
+  grid-area: cop;
+}

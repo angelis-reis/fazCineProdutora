@@ -1,0 +1,272 @@
+html, body, h1{
+    margin:0px;
+    padding: 0px;
+}
+
+.header-minimalist{
+    position: fixed;
+    z-index: 1;
+    /* background-color:  #03060e; */
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr 4fr;
+    grid-template-rows: 75px;
+    grid-template-areas: 
+    "logo about portfolio1 portfolio2 portfolio3 contacts social-media";
+}
+
+.header-minimalist a{
+    text-decoration: none;
+    z-index: 99;
+    color: white;
+    line-height: 17px;
+    font-size: 12px;
+    font-weight: bold;
+
+
+    cursor: pointer;
+    transition: 200ms color ease-in;
+    transition: 200ms font-size ease-in;
+}
+
+.header-minimalist a:hover{
+    color: gold;
+    font-size: 14px;
+}
+    #logo{
+        grid-area: logo;        
+    }
+
+        #logo img{
+            object-fit: contain;
+            width: 100%;
+            max-height: 100%;
+        }
+
+    #about{
+        align-self: center;
+        justify-self: center;
+        grid-area: about;
+
+    }
+
+    #portfolio1{
+        align-self: center;
+        justify-self: center;
+        grid-area: portfolio1;
+
+    }
+
+    #portfolio2{
+        align-self: center;
+        justify-self: center;
+        grid-area: portfolio2;
+
+    }
+
+    #portfolio3{
+        align-self: center;
+        justify-self: center;
+        grid-area: portfolio3;
+
+    }
+
+    #contacts{
+        align-self: center;
+        justify-self: center;
+        grid-area: contacts;
+
+    }
+
+    .social-media{
+        align-self: center;
+        justify-self: end;
+        grid-area: social-media;
+
+    }
+
+    .social-media img{
+        padding: 15px;
+        width: 20px;
+        height: 20px
+    }
+
+    #social-media img:hover{
+        width: 25px;
+        height: 25px
+    }
+
+
+
+#error{
+    background-color: #000000;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 90px 40px 280px 20px;    
+    grid-template-areas:
+    "error-404" 
+    "error-message"
+    "rage-gif"
+    "buttom";
+
+}
+
+    #error-404{
+        color: white;
+        grid-area: error-404;
+        align-self:center;
+        justify-self: center;
+    }
+
+        #error-image{
+            scale:0.3;
+        }
+
+       
+
+    #error-message{
+        font-size: 16px;
+        z-index: 1;
+        color: white;
+        grid-area: error-message;
+        align-self:center;
+        justify-self: center;
+    }
+
+        #error-message h1{
+            width: 300px;
+            margin-bottom: 30px;
+        }
+
+    #rage-gif{       
+        grid-area: rage-gif;
+        align-self: center;
+        justify-self: center;
+        
+    }
+
+    .office-rage{
+        scale: 0.5;
+    }
+
+    .cat{
+        scale:1.35;
+    }
+        
+    
+
+    #buttom{
+        grid-area: buttom;
+        align-self: center;
+        justify-self: center;
+        
+
+    }
+
+    .button1 {
+        background-color: rgb(194, 42, 42);
+        
+        
+        border-radius: 15px;
+        border-style: solid;
+        border-color: #78f0d3;
+        background: none;
+        font-size: 20px;
+        font-weight: bolder;
+        
+        padding: 10px 43px;
+        font-family: "Open Sans", sans-serif;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .button1:hover {
+        background-color: #39ff14;
+    }
+
+
+
+
+
+.footer-minimalist{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 55px;
+    background-color: black;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    grid-template-areas: 
+    "developed cop social-media";
+}
+
+.footer-minimalist a,p{
+    text-decoration: none;
+    color: aliceblue;
+    line-height: 17px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.footer-minimalist a:hover{
+    color: gold;    
+}
+
+    #developed{
+        grid-area: developed;
+        justify-self: start;
+        margin-left: 30px;        
+    }
+
+    #cop{
+        grid-area: cop;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-height: 650px){
+
+    #error{
+        background-color: #03060e;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 190px 90px 380px 80px;    
+        grid-template-areas:
+        "error-404" 
+        "error-message"
+        "rage-gif"
+        "buttom";
+    
+    }
+
+    #error-image{
+        scale:0.6;
+    }
+
+    .cat{
+        scale:2.3;
+    }
+
+    .office-rage{
+        scale: 0.8;
+    }
+
+
+
+
+
+
+}

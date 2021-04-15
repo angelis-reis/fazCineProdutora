@@ -1,0 +1,197 @@
+html, body{
+    margin:0px;
+    padding: 0px;
+}
+
+.header-minimalist{
+    position: fixed;
+    z-index: 99;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 4fr;
+    grid-template-rows: 75px;
+    grid-template-areas:
+    "logo portfolio1 portfolio2 portfolio3 about contacts social-media";
+}
+
+.header-minimalist a{
+    text-decoration: none;
+    color: black;
+    line-height: 17px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 200ms color ease-in;
+    transition: 200ms font-size ease-in;
+}
+
+.header-minimalist a:hover{
+    color: gold;
+}
+    #logo{
+        grid-area: logo;
+    }
+
+        #logo img{
+            object-fit: contain;
+            width: 100%;
+            max-height: 100%;
+        }
+
+    #about{
+        align-self: center;
+        justify-self: center;
+        grid-area: about;
+    }
+
+    #portfolio1{
+        align-self: center;
+        justify-self: center;
+        grid-area: portfolio1;
+    }
+
+    #portfolio2{
+        align-self: center;
+        justify-self: center;
+        grid-area: portfolio2;
+    }
+
+    #portfolio3{
+        align-self: center;
+        justify-self: center;
+        grid-area: portfolio3;
+    }
+
+    #contacts{
+        align-self: center;
+        justify-self: center;
+        grid-area: contacts;
+        scale: 1.4;
+    }
+
+        #contacts a{
+            color: gold;
+        }
+
+        #contacts a:hover{
+            font-size: 12px;
+        }
+
+    .social-media{
+        align-self: center;
+        justify-self: end;
+        grid-area: social-media;
+    }
+
+    .social-media img{
+        padding: 15px;
+        width: 20px;
+        height: 20px
+    }
+
+    #social-media img:hover{
+        width: 25px;
+        height: 25px
+    }
+
+#contacts-title{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+    grid-template-areas:
+    "call-to-action cat-image"
+    "adress cat-image";
+}
+    #call-to-action{
+        color: black;
+        grid-area: call-to-action;
+        font-size: 65px;
+        font-weight: 500;
+        text-align: left;
+        letter-spacing: 10;
+        margin: 0;
+        text-transform: none;
+        line-height: 80px;
+        align-self: end;
+        justify-self: center;
+        height: 450 px;
+    }
+
+    #call-to-action h1{
+        width: 300px;
+        margin-bottom: 30px;
+    }
+
+    #adress{
+        color: black;
+        grid-area: adress;
+        font-size: 20px;
+        text-align: left;
+        align-self: center;
+        justify-self: center;
+        height: 150px;
+    }
+
+    #adress h4{
+        width: 300px;
+        margin: 0px;
+    }
+
+    #cat-image{
+        grid-area: cat-image;
+        background-image: url(../images/contact.gif);
+        background-size: cover;
+        background-position-x: -12rem;
+        height: 100vh;
+    }
+
+.footer-minimalist{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 65px;
+    background-color: black;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    grid-template-areas:
+    "developed cop social-media";
+}
+
+.footer-minimalist a,p{
+    text-decoration: none;
+    color: aliceblue;
+    line-height: 17px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.footer-minimalist a:hover{
+    color: gold;
+}
+
+    #developed{
+        grid-area: developed;
+        justify-self: start;
+        margin-left: 30px;
+    }
+
+    #cop{
+        grid-area: cop;
+    }
+
+@media (min-height: 650px){
+
+    #contacts-title{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 650px 250px;
+        /* grid-template-rows: 1fr 3fr;    */
+        /* grid-template-rows: minmax(450px, 650px) minmax(150px, max-content);     */
+        grid-template-areas:
+        "call-to-action cat-image"
+        "adress cat-image";
+    }
+}

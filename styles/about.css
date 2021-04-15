@@ -1,0 +1,566 @@
+html, body{
+    margin:0px;
+    padding: 0px;
+}
+
+html {
+	box-sizing: border-box;
+	overflow: auto;
+	height: auto;
+	scroll-behavior: smooth;
+
+}
+
+
+
+.header-minimalist{
+    position: fixed;
+    z-index: 99;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 4fr;
+    grid-template-rows: 75px;
+    grid-template-areas:
+    "logo portfolio1 portfolio2 portfolio3 about contacts social-media";
+}
+
+.header-minimalist a{
+    text-decoration: none;
+    color: aliceblue;
+    line-height: 17px;
+    font-size: 12px;
+    font-weight: bold;
+
+
+    cursor: pointer;
+    transition: 200ms color ease-in;
+    transition: 200ms font-size ease-in;
+}
+
+.header-minimalist a:hover{
+    color: rgb(3, 3, 3);
+}
+
+
+
+
+
+    #logo{
+        grid-area: logo;
+    }
+
+        #logo img{
+            object-fit: contain;
+            width: 100%;
+            max-height: 100%;
+        }
+
+    #about{
+        align-self: center;
+        justify-self: center;
+        grid-area: about;
+        scale: 1.4;
+
+    }
+
+        #about a{
+            color: gold;
+
+        }
+
+        #about a:hover{
+            font-size: 12px;
+
+        }
+
+
+
+    #portfolio1{
+        align-self: center;
+        justify-self: center;
+        grid-area: portfolio1;
+
+    }
+
+    #portfolio2{
+        align-self: center;
+        justify-self: center;
+        grid-area: portfolio2;
+
+    }
+
+    #portfolio3{
+        align-self: center;
+        justify-self: center;
+        grid-area: portfolio3;
+
+    }
+
+    #contacts{
+        align-self: center;
+        justify-self: center;
+        grid-area: contacts;
+
+    }
+
+    .social-media{
+        align-self: center;
+        justify-self: end;
+        grid-area: social-media;
+
+    }
+
+    .social-media img{
+        padding: 15px;
+        width: 20px;
+        height: 20px
+    }
+
+    #social-media img:hover{
+        width: 25px;
+        height: 25px
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#intro{
+
+    background-image: url(../images/about/introduction.jpeg);
+    grid-template-areas:
+    "intro-title"
+    "intro-separator"
+    "intro-subtitle"
+    "intro-text";
+}
+
+
+
+
+    #intro-title{
+        grid-area: intro-title;
+    }
+
+    #intro-separator{
+        grid-area: intro-separator;
+    }
+
+    #intro-subtitle{
+        grid-area: intro-subtitle;
+    }
+
+    #intro-text{
+        grid-area: intro-text;
+    }
+
+
+
+#cine{
+    background-image: url(../images/about/introduction2.jpeg);
+    grid-template-areas:
+    "cine-title"
+    "cine-separator"
+    "cine-subtitle"
+    "cine-text";
+}
+
+
+
+
+    #cine-title{
+        grid-area: cine-title;
+    }
+
+    #cine-separator{
+        grid-area: cine-separator;
+    }
+
+    #cine-subtitle{
+        grid-area: cine-subtitle;
+    }
+
+    #cine-text{
+        grid-area: cine-text;
+    }
+
+
+
+
+
+#tv{
+    background-image: url(../images/about/introduction3.jpeg);
+    grid-template-areas:
+    "tv-title"
+    "tv-separator"
+    "tv-subtitle"
+    "tv-text";
+}
+
+
+
+
+    #tv-title{
+        grid-area: tv-title;
+    }
+
+    #tv-separator{
+        grid-area: tv-separator;
+    }
+
+    #tv-subtitle{
+        grid-area: tv-subtitle;
+    }
+
+    #tv-text{
+        grid-area: tv-text;
+    }
+
+
+
+
+#inst{
+    background-image: url(../images/about/introduction4.jpeg);
+    grid-template-areas:
+    "inst-title"
+    "inst-separator"
+    "inst-subtitle"
+    "inst-text";
+}
+
+
+
+
+    #inst-title{
+        grid-area: inst-title;
+    }
+
+    #inst-separator{
+        grid-area: inst-separator;
+    }
+
+    #inst-subtitle{
+        grid-area: inst-subtitle;
+    }
+
+    #inst-text{
+        grid-area: inst-text;
+    }
+
+
+
+
+#edit{
+    background-image: url(../images/about/introduction5.jpeg);
+
+    grid-template-areas:
+    "edit-title"
+    "edit-separator"
+    "edit-subtitle"
+    "edit-text";
+}
+
+
+
+
+    #edit-title{
+        grid-area: edit-title;
+    }
+
+    #edit-separator{
+        grid-area: edit-separator;
+    }
+
+    #edit-subtitle{
+        grid-area: edit-subtitle;
+    }
+
+    #edit-text{
+        grid-area: edit-text;
+    }
+
+
+
+.about-image{
+    /* padding-left: 400px;
+    padding-right: 400px;   */
+    padding-top: 100px;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 720px;;
+    grid-template-rows: 80px 10px 30px 500px ;
+    justify-content: center;
+}
+
+
+
+    .title{
+        color: aliceblue;
+        line-height: 17px;
+        font-size: 37px;
+        font-weight: bold;
+        align-self: center;
+    }
+
+    .separator{
+        width: 350px;
+        height: 4px;
+        background-color: rgb(28, 143, 143);
+        align-self: center;
+    }
+
+    .subtitle{
+        align-self: center;
+    }
+
+        .subtitle h2{
+        color: aliceblue;
+        line-height: normal;
+        font-size: 23px;
+        font-weight: normal;
+        }
+
+    .text{
+        padding-top: 30px;
+        height: 450px;
+        background-color:rgba(14, 0, 4, .6);
+    }
+        .text p{
+        line-height: 27px;
+        font-weight: normal;
+        font-size: 18px;
+        color: white;
+        margin:30px;
+        }
+
+        .text a{
+
+            text-decoration: none;
+            color: aliceblue;
+            line-height: 17px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+            .text a:hover{
+
+                text-decoration: none;
+                color: rgb(212, 214, 59);
+                line-height: 17px;
+                font-size: 22px;
+                font-weight: bold;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+.film{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 770px;
+}
+
+
+
+    .vimeo-wrapper {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none;
+        overflow: hidden;
+
+    }
+
+        .vimeo-wrapper iframe {
+            width: 100vw;
+            height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+            min-height: 100vh;
+            min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+            /* position: absolute; */
+            top: 50%;
+            left: 50%;
+            /* transform: translate(-50%, -50%); */
+        }
+
+
+#cine-film{
+    grid-template-areas:
+    "cine-vimeo-film";
+
+}
+
+    #cine-vimeo-film{
+
+        grid-area: cine-vimeo-film;
+
+    }
+
+#tv-film{
+    grid-template-areas:
+    "tv-vimeo-film";
+
+}
+
+    #tv-vimeo-film{
+
+        grid-area: tv-vimeo-film;
+
+    }
+
+
+#inst-film{
+    grid-template-areas:
+    "inst-vimeo-film";
+
+}
+
+    #inst-vimeo-film{
+
+        grid-area: inst-vimeo-film;
+
+    }
+
+#edit-film{
+    grid-template-areas:
+    "edit-vimeo-film";
+
+}
+
+    #edit-vimeo-film{
+
+        grid-area: edit-vimeo-film;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-minimalist{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 75px;
+    background-color: black;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    grid-template-areas:
+    "developed cop social-media";
+}
+
+.footer-minimalist a,p{
+    text-decoration: none;
+    color: aliceblue;
+    line-height: 17px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.footer-minimalist a:hover{
+    color: gold;
+}
+
+    #developed{
+        grid-area: developed;
+        justify-self: start;
+        margin-left: 30px;
+    }
+
+    #cop{
+        grid-area: cop;
+    }

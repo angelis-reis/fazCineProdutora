@@ -1,0 +1,247 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  color: black;
+}
+
+.header-minimalist {
+  position: fixed;
+  z-index: 99;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 4fr;
+  grid-template-rows: 75px;
+  grid-template-areas: "logo portfolio1 portfolio2 portfolio3 about contacts social-media";
+}
+
+.header-minimalist a {
+  text-decoration: none;
+  color: aliceblue;
+  line-height: 17px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 200ms color ease-in;
+  transition: 200ms font-size ease-in;
+}
+
+.header-minimalist a:hover {
+  color: gold;
+}
+#logo {
+  grid-area: logo;
+}
+
+#logo img {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100%;
+}
+
+#about {
+  align-self: center;
+  justify-self: center;
+  grid-area: about;
+  scale: 1.4;
+}
+
+    #about a{
+            color: gold;
+        }
+
+        #contacts a:hover{
+            font-size: 12px;
+        }
+
+#portfolio1 {
+  align-self: center;
+  justify-self: center;
+  grid-area: portfolio1;
+}
+
+#portfolio2 {
+  align-self: center;
+  justify-self: center;
+  grid-area: portfolio2;
+}
+
+#portfolio3 {
+  align-self: center;
+  justify-self: center;
+  grid-area: portfolio3;
+}
+
+#contacts {
+  align-self: center;
+  justify-self: center;
+  grid-area: contacts;
+}
+
+.social-media {
+  align-self: center;
+  justify-self: end;
+  grid-area: social-media;
+}
+
+.social-media img {
+  padding: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+#social-media img:hover {
+  width: 25px;
+  height: 25px;
+}
+
+#photo {
+  padding-top: 75px;
+  background-image: url(../images/ivan.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 350px 60px 60px;
+  padding-bottom: 130px;
+  grid-template-areas:
+    "name .."
+    "job .."
+    "personal-contacts ..";
+}
+
+#photo h4 {
+  width: 300px;
+  margin: 0px;
+}
+
+#name {
+  grid-area: name;
+  color: aliceblue;
+  font-size: 130px;
+  letter-spacing: 0rem;
+  line-height: 1.03333;
+  text-align: left;
+  justify-self: end;
+}
+
+#job {
+  grid-area: job;
+  color: aliceblue;
+  font-size: 40px;
+  letter-spacing: 0rem;
+  line-height: 1.03333;
+  text-align: right;
+  align-self: end;
+  justify-self: end;
+  padding-right: 330px;
+}
+
+#personal-contacts {
+  grid-area: personal-contacts;
+  color: aliceblue;
+  font-size: 40px;
+  letter-spacing: 0rem;
+  line-height: 1.03333;
+  text-align: right;
+  align-self: start;
+  justify-self: end;
+  padding-right: 295px;
+}
+
+#biography {
+  display: grid;
+  grid-template-columns: 2fr 3fr 0.5fr;
+  padding: 100px;
+  grid-template-areas: "biography-title biography-text ..";
+  color: black;
+}
+
+#biography p {
+  color: black;
+  font-size: 18px;
+  letter-spacing: 0rem;
+  line-height: 1.73333;
+  text-align: justify;
+}
+
+#biography-title {
+  grid-area: biography-title;
+  justify-self: center;
+  font-size: 28px;
+  margin: 0px;
+  padding: 0px;
+  line-height: 0px;
+}
+
+#biography-text {
+  grid-area: biography-text;
+  align-self: start;
+  justify-self: center;
+}
+
+#awards {
+  background-color: #eee;
+  display: grid;
+  grid-template-columns: 2fr 3fr 0.5fr;
+  padding: 100px;
+  grid-template-areas: "awards-title awards-text";
+}
+
+#awards p {
+  color: black;
+  font-size: 18px;
+  letter-spacing: 0rem;
+  line-height: 1.73333;
+  text-align: justify;
+}
+
+#awards-title {
+  grid-area: awards-title;
+  justify-self: center;
+  font-size: 28px;
+  margin: 0px;
+  padding: 0px;
+  line-height: 0px;
+}
+
+#awards-text {
+  grid-area: awards-text;
+  align-self: start;
+  justify-self: center;
+}
+
+#footer-minimalist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 75px;
+  background-color: black;
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+  grid-template-areas: "developed cop social-media";
+}
+
+#footer-minimalist a,
+p {
+  text-decoration: none;
+  color: aliceblue;
+  line-height: 17px;
+  font-size: 12px;
+}
+
+#footer-minimalist a:hover {
+  color: gold;
+}
+
+#developed {
+  grid-area: developed;
+  justify-self: start;
+  margin-left: 30px;
+}
+
+#cop {
+  grid-area: cop;
+}

@@ -1,0 +1,307 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+a:active {
+  color: gold;
+  font-size: 14px;
+}
+
+.header-minimalist {
+  display: grid;
+  /* display: none; */
+  position: fixed;
+  z-index: 99;
+  background-color: black;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 4fr;
+  grid-template-rows: 75px;
+  grid-template-areas: "logo portfolio1 portfolio2 portfolio3 about contacts social-media";
+}
+
+.header-mobile {
+  display: none;
+}
+
+.header-minimalist a {
+  text-decoration: none;
+  color: #f0f8ff;
+  line-height: 17px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 200ms color ease-in;
+  transition: 200ms font-size ease-in;
+}
+
+#logo-mobile {
+  /* display: none; */
+  width: 70px;
+  height: auto;
+  padding-top: 6px;
+}
+
+.social-icons img {
+  width: 50px;
+  height: auto;
+}
+
+.header-minimalist a:hover {
+  color: gold;
+}
+#logo {
+  grid-area: logo;
+}
+
+#logo img {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100%;
+}
+
+#about {
+  align-self: center;
+  justify-self: center;
+  grid-area: about;
+}
+
+#portfolio1 {
+  align-self: center;
+  justify-self: center;
+  grid-area: portfolio1;
+}
+
+#portfolio2 {
+  align-self: center;
+  justify-self: center;
+  grid-area: portfolio2;
+}
+
+#portfolio3 {
+  align-self: center;
+  justify-self: center;
+  grid-area: portfolio3;
+}
+
+#contacts {
+  align-self: center;
+  justify-self: center;
+  grid-area: contacts;
+}
+
+.social-media {
+  align-self: center;
+  justify-self: end;
+  grid-area: social-media;
+}
+
+.social-media img {
+  padding: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+#social-media img:hover {
+  width: 25px;
+  height: 25px;
+}
+
+#header-title {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 600px;
+  background-image: url(../images/header-image2.gif);
+  background-size: cover;
+  gap: 50px;
+  align-items: center;
+  grid-template-areas: "fazcine title";
+}
+#fazcine {
+  grid-area: fazcine;
+  justify-self: end;
+  color: azure;
+  font-size: 50px;
+}
+
+#title {
+  grid-area: title;
+  justify-self: start;
+  color: azure;
+  font-size: 20px;
+  line-height: 60px;
+  width: 500px;
+}
+
+#films {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 700px 700px 700px 700px 700px;
+  grid-template-areas:
+    "film1"
+    "film2"
+    "film3"
+    "film4"
+    "film5";
+}
+
+#films h1 {
+  align-self: center;
+  transition: font-size 0.3s;
+}
+
+#films h1:hover {
+  color: rgb(3, 3, 3);
+  cursor: pointer;
+  font-size: 52px;
+}
+
+.film-title {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-justify: center;
+  line-height: 100px;
+  font-size: 30px;
+}
+
+#film1 {
+  display: grid;
+  place-items: center;
+  grid-area: film1;
+  background-image: url(../images/films/abismo.jpg);
+  background-size: cover;
+}
+
+.film-h1-none {
+  display: none;
+}
+
+#abismo {
+  display: inherit;
+}
+
+#requiem {
+  display: inherit;
+}
+
+#historias {
+  display: inherit;
+}
+
+#zelito {
+  display: inherit;
+}
+
+#food {
+  display: inherit;
+}
+
+#abismo-player {
+  display: none;
+  position: relative;
+}
+
+#requiem-player {
+  display: none;
+  position: relative;
+}
+
+#historias-player {
+  display: none;
+  position: relative;
+}
+
+#zelito-player {
+  display: none;
+  position: relative;
+}
+
+#food-player {
+  display: none;
+  position: relative;
+}
+
+.film-player-inherit {
+  display: inherit;
+  position: relative;
+}
+
+#film2 {
+  display: grid;
+  place-items: center;
+  grid-area: film2;
+  background-image: url(../images/films/requien.jpeg);
+  background-size: cover;
+}
+
+#film3 {
+  display: grid;
+  place-items: center;
+  grid-area: film3;
+  background-image: url(../images/films/historia-cinema.jpeg);
+  background-size: cover;
+}
+
+#film4 {
+  display: grid;
+  place-items: center;
+  grid-area: film4;
+  background-image: url(../images/films/zelito.png);
+  background-size: cover;
+}
+
+#film5 {
+  display: grid;
+  place-items: center;
+  grid-area: film5;
+  background-image: url(../images/films/food-park.png);
+  background-size: cover;
+}
+
+.footer-minimalist {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 75px;
+  background-color: black;
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+  grid-template-areas: "developed cop social-media";
+}
+
+.footer-minimalist a,
+p {
+  text-decoration: none;
+  color: aliceblue;
+  line-height: 17px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.footer-minimalist a:hover {
+  color: gold;
+}
+
+#developed {
+  grid-area: developed;
+  justify-self: start;
+  margin-left: 30px;
+}
+
+#cop {
+  grid-area: cop;
+}
+
+@media only screen and (max-device-width: 1200px) {
+  .header-minimalist {
+    display: none;
+  }
+
+  .header-mobile {
+    display: inherit;
+  }
+  html,
+  body {
+    background-color: #505050;
+  }
+}
